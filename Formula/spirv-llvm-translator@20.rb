@@ -10,6 +10,13 @@ class SpirvLlvmTranslatorAT20 < Formula
     regex(/^v(20(?:\.\d+)+)$/i)
   end
 
+  bottle do
+    root_url "https://github.com/sirhcm/homebrew-tinymesa/releases/download/spirv-llvm-translator@20-20.1.7"
+    sha256 cellar: :any, arm64_tahoe:   "f7d69352a1cab4359d65a6740a60f2aa5ad337eae93454944e9644f600a8a725"
+    sha256 cellar: :any, arm64_sequoia: "b7f2662c3ee060f111e4cec7c0c06f0b8d6679f06586436d8d3afba736458a96"
+    sha256 cellar: :any, arm64_sonoma:  "f66b93e24009ac075378ca5beb299b2db9bef1a641a203dd001dd862dcea46c3"
+  end
+
   depends_on "cmake" => :build
   depends_on "pkgconf" => :build
   depends_on "spirv-headers" => :build
