@@ -10,6 +10,13 @@ class LibclcAT20 < Formula
     regex(/^llvmorg[._-]v?(20(?:\.\d+)+)$/i)
   end
 
+  bottle do
+    root_url "https://github.com/sirhcm/homebrew-tinymesa/releases/download/libclc@20-20.1.8"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "535867447130588c6bd0fdd65e995e7b4a131af2b21f23325f6db4ced5edf43e"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "505925a52b2414fb2e2993b0c804fc4b4ddad6c2a69ca8267049e5fcc7aaf5b7"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "00fb4a634816e37fafd6a577a9bb01a3605d5f26afa8bff30fabbcc91aaebc32"
+  end
+
   depends_on "cmake" => :build
   depends_on "llvm@20" => [:build, :test]
   depends_on "spirv-llvm-translator@20" => :build
