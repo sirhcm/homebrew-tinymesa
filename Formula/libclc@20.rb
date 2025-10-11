@@ -32,7 +32,7 @@ class LibclcAT20 < Formula
       -Xclang -mlink-bitcode-file
       -Xclang #{share}/clc/nvptx--nvidiacl.bc
     ]
-    llvm_bin = Formula["llvm"].opt_bin
+    llvm_bin = Formula["llvm@20"].opt_bin
 
     (testpath/"add_sat.cl").write <<~EOS
       __kernel void foo(__global char *a, __global char *b, __global char *c) {
