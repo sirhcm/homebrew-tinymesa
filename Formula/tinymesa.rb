@@ -18,6 +18,11 @@ class Tinymesa < Formula
 
   version "25.2.4"
 
+  pour_bottle? do
+    reason "This formula provides pre-built binaries and does not need to be bottled."
+    satisfy { false }
+  end
+
   def install
     lib.install Dir["*.dylib"].first => "libtinymesa_cpu.dylib"
   end
