@@ -1,6 +1,8 @@
 class Tinymesa < Formula
   desc "Subset of mesa's libvulkan with vastly fewer dependencies"
   homepage "https://github.com/sirhcm/tinymesa"
+  url "https://github.com/sirhcm/tinymesa/archive/refs/tags/tinymesa-32dc66c.tar.gz"
+  sha256 "6a8d55283ee298fc4c1ac279583a85aa5d7d62b0119309695af2cb48c536a1ec"
 
   depends_on arch: :arm64
   depends_on :macos
