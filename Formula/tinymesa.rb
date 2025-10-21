@@ -5,6 +5,12 @@ class Tinymesa < Formula
   version "25.2.4.1"
   sha256 "6a8d55283ee298fc4c1ac279583a85aa5d7d62b0119309695af2cb48c536a1ec"
 
+  bottle do
+    root_url "https://github.com/sirhcm/homebrew-tinymesa/releases/download/tinymesa-25.2.4.1"
+    sha256 cellar: :any, arm64_sequoia: "5bfa28f5f7d003c17ea5630849c3eccc34be6458e92dab662cec157cd6a40f38"
+    sha256 cellar: :any, arm64_sonoma:  "d883c9534da661c1b803fd85d009c13348c57146deadb03fc15712d396a9227e"
+  end
+
   pour_bottle? do
     reason "This formula provides pre-built binaries and does not need to be bottled."
     satisfy { false }
