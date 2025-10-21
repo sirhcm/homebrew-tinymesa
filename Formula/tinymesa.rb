@@ -15,12 +15,12 @@ class Tinymesa < Formula
 
   resource "sequoia_dylib" do
     url "https://github.com/sirhcm/tinymesa/releases/download/tinymesa-32dc66c/libtinymesa-mesa-25.2.4-macos-15-arm64.dylib"
-    sha256 "d7a22b25eb6f7caa5d99d99eb2a4745e4b1ad93f88146bf8c2c927388da03822"
+    sha256 "72c22f10ec521617efdf230a0b8e7e6dc67937d7c24211d41ec1ca6c4395be60"
   end
 
   resource "sonoma_dylib" do
     url "https://github.com/sirhcm/tinymesa/releases/download/tinymesa-32dc66c/libtinymesa-mesa-25.2.4-macos-14-arm64.dylib"
-    sha256 "619d8a96fc91c2c14442d54ed9d820953fe48680c76c560a4b5d8441189adc93"
+    sha256 "4db570bfce6f3fa797cecba7172e22bee489609b551e449b1b6e415ee8d4a090"
   end
 
   def install
